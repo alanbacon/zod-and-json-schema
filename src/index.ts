@@ -61,7 +61,7 @@ const testDefinitions = {
     input: {
       parentNodeId: '123',
       value: '456',
-      nodeType: 'QUESTION',
+      nodeType: 'QUESTION', // the type here defines what's allowed in the nodeSpecifics, and in this case they match
       nodeSpecifics: {
         questionName: 'What is your name?',
       },
@@ -83,7 +83,7 @@ const testDefinitions = {
     input: {
       parentNodeId: '123',
       value: '456',
-      nodeType: 'DECISION',
+      nodeType: 'DECISION', // the type here defines what's allowed in the nodeSpecifics, and in this case they don't match
       nodeSpecifics: {
         questionName: 'What is your name?',
       },
@@ -94,7 +94,7 @@ const testDefinitions = {
     input: {
       parentNodeId: '123',
       value: '456',
-      nodeType: 'INVALID',
+      nodeType: 'INVALID', // the type here defines what's allowed in the nodeSpecifics, the node type is completely invalid
       nodeSpecifics: {
         questionName: 'What is your name?',
       },
